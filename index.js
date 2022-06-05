@@ -1,15 +1,19 @@
-const urlBase = "https://api.github.com";
+const urlBase = "api.github.com";
 
-const getRepos = () => {
-  fetch(urlBase + `/users/Nahuel-Ramirez/repos`, {
-    headers: {
-      accept: "application/vnd.github.v3+json",
-    },
-  })
-    .then((result) => console.log(result))
-    .catch((error) => console.log(error));
-};
+// const getRepos = async () => {
+//   await fetch(urlBase + `/users/Nahuel-Ramirez/repos`, {
+//     headers: {
+//       accept: "application/vnd.github.v3+json",
+//       "Access-Control-Allow-Origin": "*",
+//     },
+//   })
+//     .then((response) => response.json())
+//     .then((data) => console.log(data))
+//     .catch((err) => console.log(err));
+// };
 
-getRepos();
+// getRepos();
 
-const repos = document.querySelector(".repos");
+const reloadPage = document.getElementById("portfolio");
+
+console.log(reloadPage);

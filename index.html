@@ -11,17 +11,23 @@
   <body>
     <header>
       <nav class="nav-container">
-        <h3 class="tracking-in-expand">Mi Portfolio</h3>
+        <a href="/">
+          <h3 class="tracking-in-expand" id="portfolio">Mi Portfolio</h3>
+        </a>
         <a href="#me" class="hvr-float-shadow text-focus-in">Sobre mi</a>
-        <a href="#" class="hvr-float-shadow text-focus-in">Proyectos</a>
-        <a href="#" class="hvr-float-shadow text-focus-in">Skills</a>
-        <a href="#" class="hvr-float-shadow text-focus-in">Contacto</a>
+        <a href="#projects" class="hvr-float-shadow text-focus-in">Proyectos</a>
+        <a href="#skills" class="hvr-float-shadow text-focus-in">Skills</a>
+        <a href="#footer" class="hvr-float-shadow text-focus-in">Contacto</a>
       </nav>
       <div class="title-container">
-        <img src="./assets/yo.png" alt="perfil" class="img-profile flicker-2" />
+        <img
+          src="./assets/yo.png"
+          alt="perfil"
+          class="img-profile slide-in-elliptic-top-fwd"
+        />
         <span class="title-description">
-          <h1 class="focus-in-contract-bck">Nahuel Ramirez</h1>
-          <h3 class="focus-in-contract-bck">Frontend Developer Jr</h3>
+          <h1 class="slide-in-blurred-right">Nahuel Ramirez</h1>
+          <h3 class="slide-in-blurred-right">Frontend Developer Jr</h3>
         </span>
       </div>
       <article class="me-container" id="me">
@@ -42,7 +48,7 @@
 
           Soy autodidacta, me gusta aprender cosas nuevas constantemente, siento
           que puedo aprender rapido, no soy de rendirme facil. Entonces busque
-          otra de las ramas que siempre me gustaron, y me encontre con la
+          otra de las ramas que siempre me gustaron, y me decidi por la
           programacion, ya tan dentro de mi cabeza por el boom que tuvo en la
           pandemia. <br />
           <br />
@@ -57,7 +63,7 @@
           Quiero aprender y demostrar que puedo desarrollar soluciones
           eficientes, con codigo limpio, escalables y practicas. Deseo encontrar
           esa oportunidad, en la que apuesten en mi porque se que voy a dar lo
-          mejor de mi.
+          mejor.
         </p>
         <a
           href="https://drive.google.com/file/d/18IjShR409zkL5CNx5OFu1Q0fdsjVKE7J/view?usp=sharing"
@@ -66,40 +72,93 @@
           <b> Click aqui para ver mi CV </b>
         </a>
 
-        <p>O escanealo!</p>
+        <p>¡O escanealo!</p>
         <img src="/assets/qr-code.png" alt="qr-cv" class="qr-cv" />
       </article>
     </header>
     <main class="main-container">
-      <section class="projects">
-        <h3>Proyectos</h3>
-        <ul class="repos">
-          <!-- <li><a href="">Proyecto1</a></li>
-          <li><a href="">Proyecto2</a></li>
-          <li><a href="">Proyecto3</a></li> -->
-        </ul>
+      <h3>Proyectos</h3>
+      <section class="project-container" id="projects">
+        <div class="projects">
+          <h4>Proyecto 1</h4>
+        </div>
+        <div class="projects">
+          <h4>Proyecto 1</h4>
+        </div>
+        <div class="projects">
+          <h4>Proyecto 1</h4>
+        </div>
+        <div class="projects">
+          <h4>Proyecto 1</h4>
+        </div>
       </section>
-      <section class="skills">
+      <section class="skills" id="skills">
         <h3>Skills tecnologicas</h3>
-        <div>
-          <img src="" alt="HTML" />
-          <img src="" alt="CSS" />
-          <img src="" alt="JS" />
-          <img src="" alt="REACT" />
-          <img src="" alt="GIT" />
-          <img src="" alt="PYTHON" />
-          <img src="" alt="POSTMAN" />
+        <div class="img-skills">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZlJREFUSEvFld1VwkAQhe8sBYgd0IFYAbEChxN8FjugA7ECsQJ5l8BagaEDqEBKoADd8UxCIJJ/zkH3cXey396ZOxPCmRed+X78PSBgCgH0TlS29K146W8zCs4OmDFZAm5PUSDA+8AKVygwY0AeNchBbuqADOgjjqMn37pxI8CdhdakcL0xvIYADAF6TRQoYM5m4iBXBZQ2Ad34TB58i2mpgvSLNEUKqFv4JL42IMnpgtH5Ajp5ClowQ4HcpxWXAvQyB/osKtoxJOCDKQzksm+xLQXoYcAku6CNAJv83MvLwMLO2UwTBb6VTF/ljooUYO0gIxMVkZ7ToLz6NAGsAKhrotb/bcUYkwNY+1Z2bjo8pUhBNI8EWA2sXGv4gtF2QNSlBrBJrgMmzflF8pjjdJYCImdDRi1g2bdQVfu1YHS/gR6BJrvNzKDT/QLAwRmpOzdANGkVqxPzyLbZMdEUkG+m/W4DQNwLYAF5VZNVJyhBwl1dMpau9UebMdjAeIJoFG8JFDq4UPugQtY//DKrXtT0vFaKml6ajv8BfWfEGZ0YeksAAAAASUVORK5CYII="
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbJJREFUSEvVVN1RwkAQ/vYoQErACsQKiAUQA9Fn6UA6ECtQKhCf+QuhAGMFQgfQAQ2w6yQheEkuAZnBGe8xudvvb3cJZz505vr4ewBlT15F+OoUZURqyX67q7/NKSB7HABonAIA4FN81yoFiBRAHk8BIFD/oAJlj3sCPIUA4QNANuVgVE0IEfDMvts7oOAHQBTfwLsPLSs+ztAiVh8xoSMAoD0AZAGBUcE+UO2+iVC+TVMApdzjQJvjDhHewptHAkzrxPyVKi1YE2Ggf2PFQWifnpkodQ2vtSjNIPLSHkuGe679kv8pAN/Nt73JBAPABiIpZgL0Mb/zyB55AN1GFv0CIAz2AsBSFHexVXUivOhkEr/3gylYy9ytZQkbd5E2zbE1huBzAIYp3rVu3iQNYCW+exndcKY1bDleAxUVwGutMnkZczIqUPZkIJCHqABhwEwe5u1ZiooztMCqQUA0uQR6Z7/dOcoivTO0BxsQ4qkWhEqqmXbMrYlCiwoASqfOtCYKAXZ+O0RiJS1YXF1mIhSgorwkl4ODlivWHDmKlCUiTpwLeSwchHNQKitegOc9/x/gG13v2Bkv5hSFAAAAAElFTkSuQmCC"
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT9JREFUSEvtlcFNw0AQRf9MfMclmApwCUSGI3ZSAVABUAGmAkgH7sCYHJFxOiAluAPMfTOD1shBQULJghNxyN52tTNv/sy3l7DlRVvOj90CyifWPhRFsSwLX1GwB3Tt3bdordH+b4uEeMgqIYB7KN5BdC1ENUF9Uk0BHFl5v1ZgA5+n3jGrVABdRvEis3vPmNp4XvB53hPAqvGMmcuA3wDUAII/23RFgeIuSiStcgTqcaqK834BNhshZSOT4RhNlSMU5hkIBz3NYOnWBqAbO4+y4AcQrtwAigmIQqiGUSJ+O2SRR+sgqAYg3Cq0OIl1VBac2r0LoOGFHNoWdPW+TDlTRSLE49MzM+vOqxy+DPjVDtsFYONrELI2kbZOufj6lNUqmUPhAxh1TnIFrP01fL/wI8A50wYBu32TNyjI+coHR4bGGRIuuI4AAAAASUVORK5CYII="
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAsRJREFUSEvFlTFME2EUx3/vrugIozEmlnAlDg4MJiyYMBidjNWVBSMxbtYwENOrlLTEMChlMwZDB1kcFEcThyayoAsmLtojMBlHdFOu98z3XQu9WgJEid9yue/ue///+7/3f59wzEuOOT77AxQ3+0iF05aA8ppCppYgU6qPIlyze2FqhmL/djey+wOUghoOVSLdQiSHoOy4N22QnsYSana0giNpIsYpeKOHB3i4mSZsVBOHZoNxYBK1oR+T96q7AQ2ZhpvtlkX3DGa/DBE5lQSAlazxARBC90IimAE4UgaGWuehcrCCsNKsSRbfyyYyODJAOfiKyhwSpVG5gYODEtiggkdEhOhL1NlCdArfO31wDYwMPdFdVI3evQgvaGCKPUPoDu/KEsu1RsQ0DiaTy8APRJbYcRba5durgdFdpYqyQiNVwW2YNsyipEGLtk1nN6Ysy/zAHLZNJQdsx2fcGm5oui2L6Dj5wfU42dYq19fbP9jtcj1A5RsFb4RyfRHkVvy7PsPPTFAKVhE9hZ/xduO0iPqZoT8BmpttxQtA1yhkxigH74CR5rdVfO8ipfoyyDAFbw/AEgu28L10EqBULyJyltC9ZzWMvfAc4QyhO4QbXkKcp3EC0W0aqbekwhoiLo57lfv9W8S1mQf5iD9QSQKYN2MmpQj6CuEkyPsm4yHyntF7b80GJsA6Kn1INIjyE+Q6QrHdhN2NVgqyCE+AX8AGcB70DeLUmxlkQK4An4AB4ATKHQpe7JO2tf8satORcn0M5BEqE/as6CLoJH5mOW6GPc0PD9Dp5DirkomO6oME2yOPCtPjSLHLLPpsh3fonvv7WWR8EaZGbSBrKmce0YW4Bprb9Ux8b9TobPGmVvvXwHaU5sAxknzHiXItd9KatiK9oH0IM4nxfagim58MO/vsflsd+D0xKjrL/4/e/+Ol/48y+A3XgDIokWzzIwAAAABJRU5ErkJggg=="
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZJJREFUSEu1lc1RwkAYQN9GPGsH6hg969WBETqACsQK1AqECtAKtAO1AnAmeOasHLADLCBZZ5dNJD+7WZmBGQ6E5L3vZ78vgi1/xJb5eAs+LzgLBC8qoETSO/1g5hOcl0DDA8bAvoEuk4SOj8RLMG/RR/JUiNhL4hSYyEc7DXpxTHcTiVWwXhYBs6BBJ45pI/W3j2DPp1yVgoqaI2F4EjFQ0HmTB+BmrWTWcpUEVXANkjyHU661oKXLpU9UnSQnsMINRUjugl1egaVvTzJBHXyVBENgEsAo6wk6mytbJplg3mQBHLiGJxUIGCN5C6d01f1fTQYC7rNnJYtwypH6vbFAnazjiHPTk+KcfIcRhzmBWQWTteNXSiaXgWm8ECwk3GZTLvlJJO10ystNFlglJUExhAI8l0F6ryOT9zCibeZgAlzm+BXwSoG6aJE8hpEuRXnQLHCrwCJZSkFfqIOxWnyrzeqAOwWOTP4qUwOvFTglHnAvQaXEE+4tyCSB3kMkCV2ft9m/BK4V4vrP65W5KVw99wshQ9cZBjUnSgAAAABJRU5ErkJggg=="
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvFlUFOwzAQRf8kYU1vQNlWMZgbtGuExA3oDegVuAFij6AnQCxYg7gALg5dhxuUdWMPMoWWuIkJlEKWVvTfzPzvMWHNH61ZH/8PEEIcAnwEoAugNeuYc4CUMfZkPB6r0BSCHXQ6HRnH0R0RTgH0mbHliU3iONlTSuV1kCAgTdMuEV/E8UbP2uKKGdIXYkYvy7K7FQC4DY3g2wApZcsYs1svyqVqHSCK0LUWnCTJ0B9XaUQz8ekDQO2m8XUAonmXS56UAEKIy/fENNWHBwBAQ611/0OgBNjZSfOKpIRgL0TRAbO9X/zEudZP25UAIVL21YjwzIyKGFJujDlPkujMT5fW2bxwb0Q+gK+Z6ZQIx4tLVirBxfb98i3OawHLI6J9gG8aG+IcIDw/PmbzkARNXjawCSpgspSybUzhdsvm28YpR7CJ+iiOk65SalJpsjt0EGunhwC1rIXbQ6Wb7KB1pKqV0WAX/fKq+FzdbNlVAkZaZ1KIVDFj8ONl53vyCT5hhovvwBjbC70JX75oDlIUxYAIkght5rfcK4ByZr4MVe8K+hLQJDo/ftFWFf+TDl4BPEbPGdSCVw0AAAAASUVORK5CYII="
+          />
         </div>
       </section>
     </main>
-    <footer class="footer-container">
+    <footer class="footer-container" id="footer">
       <ul class="contact">
-        <li><a href="">LinkedIn</a></li>
-        <li><a href="">GitHub</a></li>
-        <li>Email</li>
-        <li>Wpp</li>
+        <li>
+          <a
+            class="hvr-float-shadow"
+            href="https://www.linkedin.com/in/nahuel-ramirez-25a864b6/"
+            target="_blank"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARBJREFUSEvlleFNwzAUhO8pAzQjsAEMkBNmA5iAjsAmXQE2CBM01S3ACIwA/yMZPcupQktQKjeVEP5nyX5f7t292LDwsoXr47IAkh2A20JVnaS7ocY3BSRjYfF0XdK+7hTgE0CbYfcAVqeA5wBeJK29KMlnAI9/DvBx0KL63Arcg7dc9CZ7sMv7KwAObM3sPcboHl2PP2COBztJIXuQojtcIrmuqqrtus5VpkXyCcBm2BcBplpF0oEpbUWAEELd9/3WzLx1D5JSnMdDWgRomiaY2TYreZXkHiwGOPKquEUHCv4xwCM3HjQfLJ8HxBjrnCDf/nRuVkxP+TMcnf0tpud4cPbGO/myT2ZRXyYuL67gC6g41hkHVUvkAAAAAElFTkSuQmCC"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://github.com/Nahuel-Ramirez"
+            target="_blank"
+            class="hvr-float-shadow"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAg1JREFUSEu1Vc11m0AQnmGVs+0K4lwVILgC2xUkqcCkgkgVRKnAdgeogsQVxKkgZGels9IBOccweQOstCAQ2O+JC7Bv5vtmvvlZhCM/eGR8GCQIguADQPEeESNmiCQgREiZOUWER61Xy0NB9hLUwLcAeH44S94AeHMi+t5l10kQhv6CGb48Tz68I6J522eP4GXgFSwz3BtjZi5Jg8D3/StE+FGbP+Q5LzzPixHhc+30u36/q964ZOYEEWMAvqnPPrpyNQjC0N8ww+u6kF+1Ngv5jqLoNE3TzI3MPWtmzRui1RtruyWoisrfdiC4JKJ4TB32ZcVPRJSUgVqAIAiSXZqlntfGmMcxBNPpNFLK+9UVnEPgC9il1ZrIlD0/9gmCnb/MidbmopWBLxqf1IA/iczVWHCxcwnkn8iUwbsZsAN4FAJXoozInD0zg60CiPBHa1NugN4iI/Jc69XdGJIwfDtjxtuBIjfa9K/UgxkWk8nkvj0DFkhmoSiebpihFUhHm4pTPWgneV5cK6Vmu7blB6VexZZIgPP8XwKA0nWnbpauPA2J5MdZFZlSk4s8f5JhuUSE7VT3zY09b89Px7KzenZvRwvUtRQHl93OuSKpLhbIZKnZ0e8j6MpyTyJXS5HL8yCR5dflbDMQzYsC4r61MnhlClFRFNl6vU7dAKr9o877bjJrO0gwZg4O2Ryd4D9k8RcomXnYoAAAAABJRU5ErkJggg=="
+            />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:nahuel-ramirez@hotmail.com" class="hvr-float-shadow">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARdJREFUSEvtVd0NgjAQ/pobQJ3AEdQBLmEDHUE30Al0Ex1BNyA5BtANdAJ1AFJzDTQEqBCRF2Mf2973d+Uw6HmZnvHxQwTMvLDWbo0x046xXQFsROSoOD4iZtaDcUdwV26tPSdJMisT2Az8BGD+IZGvFREnvujAEeiBxgXgAGDQkugJYKmxMLPHqSUgolEcx48oioZpmipJk5sTES0LNfdcaCiiB4BV3qQ3brxqBcru7QEMmwjyVI5EtAq4KatWYI3Vr2APSpnXudE+uSdYVv0JQcWNbmT9qajuQqC1zk0G4rMOvbK2EbV8pdVrf4LG6Ooi+tqwA3ARETeVi7NIP5QdgEmjvPcXbgDWlXHdETRY/kO/zL4iegFjxpwZ5jtbIgAAAABJRU5ErkJggg=="
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://api.whatsapp.com/send?phone=5491173635082&text=Hola%20Nahuel,%20soy..."
+            target="_blank"
+            class="hvr-float-shadow"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjtJREFUSEvFVdttG0EMJLVXgFxBpA70LdzK5w6sCmRVYLuCOBXErsDqIOogZ/Gg3ygVxB3E+RVuxWAOu8He00YAw/sjQMflkDNDLtM7H37n/PTxAGmaZsy8UtUZM8+I6IWIDqqaE9FTURT47T29HWRZNnHOPRJRRkR/kJSZ89PpNPZA5z7r1hizzvMcwK3TCTCfz2fGmO9ExMx8v9vt7rouW2tviOgrulLVZVc3LYAsy8bOuV+o2jl3ud/vD0MU+GI2RPTJGDNtdtICsNZuQYtzLkNyABLROM/z5z4gD/KDiLYisozjagAhkJm/gBavAy6+iMh0qJOIrqWIoMjq1ADSNL1n5mtjzBlajS4hdi0ioKL3WGtVVR+KooA2bQBrbWU5EYFzqAFQq6xH9Nr9VgfWWvCci8gVPnqKIDgoOhuqHt88A6s4tkaRBziIyGVIFnWxEZH1EMhisbhT1c8i8i9vE6DVoqcK3K+IaGOMuT0ej5PRaIQh3CZJ8hCs6R04E5HJayLDzzVbBgP4VYGprZIEx/lC8D+sWlHc0iBwHl+KKfF7CVMd1gSGsZoXay2SPqrqRTzRXYPWSVMMhELKspwkSXIAPdG8/AwO7OzAt9ny8pCwGE7owczT0E0c3xQZ7vlGRLfM/FtVM1V9joUMl7FCyrK8ZmYMFXclb2kQCdlVNKiD8BAS70I1jHgTjDFXfbuq2QE2ZzVszrncLzvwfePfADgHyw8PDmK3//3gvDa1b/3+8W/yWyvti/sL3kU6KFMzJTIAAAAASUVORK5CYII="
+            />
+          </a>
+        </li>
       </ul>
-      <p>2022 &copy;</p>
+      <p>2022 &copy; | Nahuel Ramirez</p>
     </footer>
   </body>
   <script src="index.js"></script>
